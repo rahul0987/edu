@@ -5,8 +5,8 @@
     <script src="https://apis.google.com/js/api.js"></script>
     <script>
       // Client ID and API key from the credentials JSON file
-      const CLIENT_ID = '404714314923-96hlh29rvohp5njusgdimk2ttl7n3ci5.apps.googleusercontent.com';
-      const API_KEY = 'AIzaSyDjyGJOOMAQXEw2YUXI9Ih51O8i-k3JPqs';
+      const CLIENT_ID = '';
+      const API_KEY = '';
 
       // Array of API discovery documents for the APIs used
       const DISCOVERY_DOCS = ['https://sheets.googleapis.com/$discovery/rest?version=v4'];
@@ -68,7 +68,7 @@
       // Read data from a Google Sheet
       function readDataFromSheet() {
         gapi.client.sheets.spreadsheets.values.get({
-          spreadsheetId: '1Cgxtn1OOZ8Toj4r9kabBhHnXHxYq68yYC5xwJYZpr8w',
+          spreadsheetId: '',
           range: 'Sheet1!A1:B',
         }).then((response) => {
           const values = response.result.values;
@@ -92,7 +92,7 @@
           ['Jane Smith', 'janesmith@example.com'],
         ];
         gapi.client.sheets.spreadsheets.values.update({
-          spreadsheetId: '1Cgxtn1OOZ8Toj4r9kabBhHnXHxYq68yYC5xwJYZpr8w',
+          spreadsheetId: '',
           range: 'Sheet2!A1:B',
           valueInputOption: 'RAW',
           resource: {
